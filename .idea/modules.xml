@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fuel.iml" filepath="$PROJECT_DIR$/fuel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fuel_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fuel_main.iml" group="fuel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fuel_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fuel_test.iml" group="fuel" />
+    </modules>
+  </component>
+</project>
