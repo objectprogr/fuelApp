@@ -18,7 +18,11 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+	mavenLocal()
+	jcenter()
 	mavenCentral()
+	maven { url "https://repo.spring.io/snapshot" }
+	maven { url "https://repo.spring.io/milestone" }
 }
 
 
@@ -26,4 +30,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	runtime('org.postgresql:postgresql')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+//	compile('com.github.ulisesbocchio:jasypt-spring-boot-starter')
+//    compile group: 'org.jasypt', name: 'jasypt', version: '1.9.2'
+//	compile('org.jasypt:jasypt-spring-boot-starter')
+	compile group: 'com.github.ulisesbocchio', name: 'jasypt-spring-boot-starter', version: '1.2'
+
 }

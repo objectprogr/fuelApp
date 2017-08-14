@@ -18,7 +18,7 @@ public class TestMapping {
         Connection connection = new Connection();
 
         String selectTableSQL = "SELECT * FROM public.tankowanie";
-            statement = connection.createStatement;
+//            statement = connection.createStatement;
 
 //            System.out.println(selectTableSQL);
 
