@@ -1,0 +1,100 @@
+package com.fuel;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Spalanie {
+
+    @Id
+    @GeneratedValue
+    private double litry;
+    private String rodzajPaliwa;
+    private Double cena;
+    private double kwotaTankowania;
+    private double stanLicznika;
+    private double przejechaneKm;
+    private double spalanie;
+    private double koszt_100_km;
+
+    @Override
+    public String toString() {
+        return "Spalanie{" +
+                "litry=" + litry +
+                ", rodzajPaliwa='" + rodzajPaliwa + '\'' +
+                ", cena=" + cena +
+                ", kwotaTankowania=" + kwotaTankowania +
+                ", stanLicznika=" + stanLicznika +
+                ", przejechaneKm=" + przejechaneKm +
+                ", spalanie=" + spalanie +
+                ", koszt_100_km=" + koszt_100_km +
+                '}';
+    }
+
+
+    public Double getCena() {
+        return cena;
+    }
+
+    public void setCena(Double cena) {
+        this.cena = cena;
+    }
+
+    public double getLitry() {
+        return litry;
+    }
+
+    public void setLitry(double litry) {
+        this.litry = litry;
+    }
+
+    public String getRodzajPaliwa() {
+        return rodzajPaliwa;
+    }
+
+    public void setRodzajPaliwa(String rodzajPaliwa) {
+        this.rodzajPaliwa = rodzajPaliwa;
+    }
+
+
+    public double getKwotaTankowania() {
+        return kwotaTankowania;
+    }
+
+    public void setKwotaTankowania(double kwotaTankowania) {
+        this.kwotaTankowania = kwotaTankowania;
+    }
+
+    public double getStanLicznika() {
+        return stanLicznika;
+    }
+
+    public void setStanLicznika(double stanLicznika) {
+        this.stanLicznika = stanLicznika;
+    }
+
+    public double getPrzejechaneKm() {
+        return przejechaneKm;
+    }
+
+    public void setPrzejechaneKm(double przejechaneKm) {
+        this.przejechaneKm = przejechaneKm;
+    }
+
+    public double getSpalanie() {
+        return spalanie;
+    }
+
+    public void setSpalanie(double spalanie) {
+        this.spalanie = spalanie;
+    }
+
+    public double getKoszt_100_km() {
+        return koszt_100_km;
+    }
+
+    public void setKoszt_100_km(double koszt_100_km) {
+        this.koszt_100_km = koszt_100_km;
+    }
+}

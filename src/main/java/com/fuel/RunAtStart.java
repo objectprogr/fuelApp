@@ -1,7 +1,7 @@
 package com.fuel;
 
-import org.springframework.stereotype.Component;
-import javax.annotation.PostConstruct;
+        import org.springframework.stereotype.Component;
+        import javax.annotation.PostConstruct;
 
 @Component
 public class RunAtStart {
@@ -13,9 +13,9 @@ public class RunAtStart {
 
     @PostConstruct
     public void select(){
-        Iterable<Tankowanie> cena = interfejs.findByRodzajPaliwa("LPG");
-//        Iterable<Tankowanie> cena = interfejs.findaAll();
-        Tankowanie rodzajPaliwa = cena.iterator().next();
+        Iterable<Spalanie> cena = interfejs.findByLitry(40.31);
+//        Iterable<Spalanie> cena = interfejs.findaAll();
+        Spalanie rodzajPaliwa = cena.iterator().next();
         System.out.println("Kwota: " + rodzajPaliwa);
     }
 }
