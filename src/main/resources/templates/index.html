@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8"/>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}"/>
     <title>Title</title>
 </head>
 <body>
-Now is: <h1 th:text="${now}"></h1>
+Now is: <p th:text="${now}"></p>
+<!--Litry: <p th:text="${now.litry}"></p>-->
+<!--Spalanie: <p th:text="${now.litry}"></p>-->
+<table>
+    <tr>
+        <th>Litry</th>
+        <th>Rodzaj paliwa</th>
+        <th>Cena</th>
+    </tr>
+<tr th:each="spalanie : ${now}">
+    <td th:text="${spalanie.litry}"></td>
+    <td th:text="${spalanie.rodzajPaliwa}"></td>
+    <td th:text="${spalanie.cena}"></td>
+</tr>
+</table>
 </body>
 </html>

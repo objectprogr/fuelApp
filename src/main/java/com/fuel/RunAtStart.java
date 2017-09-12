@@ -1,7 +1,7 @@
 package com.fuel;
 
-        import org.springframework.stereotype.Component;
-        import javax.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
+import javax.annotation.PostConstruct;
 
 @Component
 public class RunAtStart {
